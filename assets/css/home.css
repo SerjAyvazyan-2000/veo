@@ -1,0 +1,742 @@
+
+.hero-section {
+    margin-top: 102px;
+}
+
+.hero-body {
+    position: relative;
+    z-index: 2;
+    min-height: 662px;
+    width: 100%;
+
+
+}
+
+.hero-section .hero-titles{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.hero-section.visible .hero-titles{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-section .video-wrapper{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.hero-section.visible .video-wrapper{
+    opacity: 1;
+
+}
+
+.hero-video {
+    border-radius: 24px;
+
+}
+
+.hero-video-img img {
+    border-radius: 24px;
+
+}
+
+.hero-body::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: var(--black2);
+    opacity: .5;
+    z-index: 1;
+    border-radius: 24px;
+
+}
+
+.hero-titles {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-titles h1 {
+    font-weight: 600;
+    font-size: 124px;
+    line-height: 128px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.hero-titles p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 5px;
+    margin-bottom: 62px;
+
+}
+
+.hero-play {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2;
+}
+
+.hero-play.played {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.hero-play.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.advantages-section {
+}
+
+.advantages-section .gradient-title,
+.advantages-section .advantage-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.advantages-section.visible .gradient-title {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.advantages-section.visible .advantage-item:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.advantages-section.visible .advantage-item:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.advantages-section.visible .advantage-item:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.advantages-items {
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.advantage-item {
+    min-height: 357px;
+    background: var(--black3);
+    border-radius: 24px;
+    border: 1px solid var(--gray);
+    flex: 1 1 30.5%;
+    padding: 80px 28px 24px 28px;
+}
+
+.advantage-item h3 {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.advantage-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--gray4);
+
+}
+
+.advantage-item-icon {
+    max-width: 65px;
+    width: 100%;
+    height: 65px;
+}
+
+.about-video-cnt {
+    position: relative;
+    z-index: 2;
+    min-height: 810px;
+    margin-top: 92px;
+}
+.about-body .section-titles p{
+    margin-top: 40px;
+}
+
+
+.about-section .section-titles,
+.about-section .about-video-cnt,
+.about-section .about-info {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.about-section.visible .section-titles {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.about-section.visible .about-video-cnt {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.about-section.visible .about-info {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+
+.about-play {
+    right: 15px;
+    bottom: 5px;
+}
+
+
+.about-info {
+    padding: 30px 186px 0 186px;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.about-info p {
+    max-width: 699px;
+
+}
+
+.how-work-section {
+    margin-top: 50px;
+}
+
+.how-work-section .gradient-title,
+.how-work-section .how-work-items,
+.how-work-section .how-work-btn {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.how-work-section.visible .gradient-title {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+.how-work-section .work-big-video{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.how-work-section.visible .work-big-video {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.how-work-section.visible .how-work-items {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.how-work-section.visible .how-work-btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+.work-video-cnt {
+    min-height: 602px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.work-video {
+    border-radius: 24px;
+
+}
+
+.work-video-img img {
+    border-radius: 24px;
+}
+
+.work-video-tools {
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 28px;
+}
+
+.work-video-tools p {
+    max-width: 699px;
+}
+
+.work-play {
+    position: initial;
+}
+
+
+.how-work-items {
+    display: flex;
+    column-gap: 48px;
+    row-gap: 20px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    flex: 1 1 45%;
+}
+
+.work-item p {
+    padding: 20px 0 0 20px;
+    max-width: 404px;
+}
+
+.work-video-wrapper {
+    position: relative;
+    z-index: 2;
+    height: 287px;
+}
+
+.work-item-video {
+    border-radius: 24px;
+}
+
+
+.work-item-play {
+    bottom: 16px;
+    right: 16px;
+}
+
+.how-work-btn {
+    margin-top: 60px;
+}
+.functional-video-img img{
+    border-radius: 24px;
+}
+
+.functional-video-cnt {
+    min-height: 602px;
+    position: relative;
+    z-index: 2;
+    margin-top: 51px;
+
+
+}
+
+
+.functional-section {
+    margin-top: 118px;
+}
+
+
+.functional-section .section-titles,
+.functional-section .functional-text {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.functional-section .functional-video-cnt{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.functional-section.visible .section-titles {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.functional-section.visible .functional-video-cnt {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.functional-section.visible .functional-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+
+
+.functional-text {
+    margin-top: 28px;
+}
+
+.functional-text p {
+    max-width: 699px;
+}
+
+.functional-video {
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.trust-section {
+    margin-top: 95px;
+
+}
+
+.trust-section .trust-video-cnt {
+    opacity: 0;
+
+    transition: all 0.8s ease;
+}
+
+.trust-section.visible .trust-video-cnt {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.trust-section .trust-titles {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.trust-section.visible .trust-titles {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+
+.trust-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.functional-play {
+    bottom: 49px;
+    right: 16px;
+}
+
+.trust-video-cnt {
+    min-height: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+.trust-titles p {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 34px;
+
+}
+.trust-titles{
+    padding: 0 20px;
+}
+
+.trust-titles h2 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+    text-align: center;
+
+
+}
+
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1350px) {
+    .about-info {
+        padding: 30px 60px 0 60px;
+
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .about-info {
+        padding: 30px 20px 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-info {
+        flex-direction: column;
+        gap: 66px;
+    }
+
+    .about-info button {
+        margin: 0 auto;
+    }
+
+    .about-video-cnt {
+        min-height: 510px;
+        margin-top: 45px;
+    }
+
+    .work-item {
+        flex: 1 1 55%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        margin-top: 68px;
+    }
+
+    .hero-section .container {
+        padding: 0;
+    }
+
+    .hero-titles h1 {
+        font-size: 93.73px;
+        line-height: 96.75px;
+        letter-spacing: 0.08px;
+    }
+
+    .hero-titles p {
+        font-size: 15.12px;
+        line-height: 21.16px;
+        max-width: 304px;
+        margin-bottom: 26px;
+    }
+
+    .advantage-item {
+        flex: 1 1 auto;
+    }
+
+    .about-play {
+        bottom: 15px;
+    }
+
+    .about-body .section-titles {
+        padding: 0 20px;
+    }
+
+    .work-play {
+        position: absolute;
+        bottom: 128px;
+        right: 8px;
+        z-index: 2;
+    }
+
+    .work-video-cnt {
+        min-height: 402px;
+    }
+
+    .work-big-video {
+        position: relative;
+        z-index: 2;
+    }
+
+    .work-item p {
+        padding: 20px 0 0 5px;
+    }
+
+    .how-work-section {
+        margin-top: 87px;
+    }
+
+    .how-work-body .gradient-title {
+        max-width: 331px;
+        margin: 0 auto;
+    }
+    .functional-video-cnt {
+        min-height: 450px;
+        margin-top: 88px;
+    }
+    .trust-video-cnt {
+        min-height: 500px;
+        margin-top: 66px;
+    }
+    .trust-section {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero-body {
+        min-height: 523px;
+    }
+
+    .hero-body::after {
+        border-radius: 0;
+    }
+
+    .hero-video {
+        border-radius: 0;
+    }
+
+    .hero-video-img img {
+        border-radius: 0;
+    }
+
+    .hero-play {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .advantages-items {
+        gap: 28px;
+        margin-top: 84px;
+    }
+
+    .advantage-item {
+        flex: 1 1 auto;
+        padding: 60px 28px 24px 28px;
+        min-height: 355px;
+    }
+    .advantage-item:nth-child(3){
+        padding: 60px 28px 61px 28px;
+    }
+
+    .advantage-item p {
+        margin-top: 23px;
+    }
+
+    .advantage-item-icon {
+        max-width: 50px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .about-video-cnt {
+        min-height: 279px;
+    }
+
+
+    .work-video-cnt {
+        min-height: 250px;
+        margin-top: 87px;
+    }
+
+    .work-video-tools p {
+        max-width: 320px;
+    }
+
+    .work-play {
+        bottom: 212px;
+    }
+
+    .work-video-wrapper {
+        height: 250px;
+    }
+
+    .how-work-items {
+        gap: 30px;
+        margin-top: 66px;
+    }
+    .functional-section {
+        margin-top: 87px;
+    }
+    .functional-video-cnt {
+        min-height: 250px;
+    }
+    .functional-body .section-titles p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: var(--gray4);
+
+    }
+    .functional-body .section-titles{
+        padding: 0 20px;
+    }
+    .functional-section .small-container{
+        padding: 0;
+    }
+    .functional-text {
+        margin-top: 20px;
+    }
+    .functional-body .functional-video-cnt{
+        margin: 88px 25px 0 15px;
+
+    }
+    .functional-body .functional-text{
+        margin: 20px  25px 0 15px;
+
+    }
+    .functional-play {
+        bottom: 8px;
+        right: 8px;
+    }
+
+
+    .trust-titles h2 {
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -0.5px;
+        margin-top: 280px;
+    }
+    .trust-titles p{
+        margin-top: 40px;
+        margin-bottom: 88px;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: var(--gray4);
+
+
+    }
+    .trust-video-cnt {
+        min-height: unset;
+    }
+
+    .trust-video{
+        height: 390px;
+    }
+    .about-body .section-titles p {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 456px) {
+
+
+}

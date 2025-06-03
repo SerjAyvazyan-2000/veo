@@ -1,0 +1,166 @@
+.footer {
+    margin-top: 101px;
+    background: #060606;
+    border-bottom: 1px solid;
+    min-height: 414px;
+    position: relative;
+    z-index: 2;
+}
+.footer .footer-body{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.footer .footer-decor{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.footer .footer-blur{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.footer.visible .footer-body {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.footer.visible .footer-decor {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.footer.visible .footer-blur {
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.footer-decor {
+    position: absolute;
+    bottom: 0;
+    max-width: 1340px;
+    width: 1340px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-blur {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+}
+
+.footer-blur img {
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-body {
+    justify-content: space-between;
+    gap: 40px;
+    padding: 58px 0 0;
+    flex-wrap: wrap;
+}
+
+.footer-menu-list {
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-menu {
+    margin-left: 150px;
+}
+
+.footer-menu-list li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white);
+    transition: .5s;
+
+}
+
+.footer-menu-list li a:hover {
+    color: var(--yellow);
+}
+
+.footer-actions {
+    gap: 10px;
+}
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1300px) {
+    .footer-decor {
+        width: 1000px;
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .footer-menu {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-decor {
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-decor {
+        width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-menu-list {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .footer-body {
+        flex-direction: column;
+        padding: 58px 0 0;
+        align-items: self-start;
+    }
+    .footer {
+        margin-top: 88px;
+        min-height: 554px;
+    }
+    .footer-decor {
+        width: 320px;
+        bottom: 38px;
+    }
+    .footer-blur{
+        display: none;
+    }
+    .footer-actions{
+        width: 100%;
+    }
+    .footer-actions button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 456px) {
+
+
+}

@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header-container">
+            <div class="header-body G-align-center">
+                <a href="index.html" class="header-logo G-flex">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
+
+                <nav class="menu">
+
+                    <ul class='menu-list G-align-center'>
+
+
+                        <li class="menu-item">
+                            <a class='menu-link' href="#advantages">Преимущества</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class='menu-link' href="#howWork">Как работает</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class='menu-link' href="#functional">Функционал</a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">FAQ</a>
+                        </li>
+                        <li class="header-mobile-actions">
+                            <button class="btn-login">Вход</button>
+                        </li>
+                        <li class="header-mobile-actions">
+                            <button class="btn-register G-center">
+                                <span>Регистрация</span>
+                            </button>
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+
+                <div class="header-actions G-align-center">
+                    <button class="btn-login">Вход</button>
+                    <button class="btn-register ">
+                        <span>Регистрация </span>
+                    </button>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu-bg"></div>
+    </header>
+
+    <main class="main">
+
+
+        <section class="hero-section section-animate">
+            <div class="container">
+                <div class="hero-body G-column-center">
+
+                    <div class="hero-titles G-column-center">
+                        <h1>Veo 3</h1>
+                        <p>Нейросеть для генерации видео высокого качества. <span
+                                class="desktop-text-wrap">Доступно в России</span></p>
+                        <button class="btn-orange">Начать сейчас</button>
+                    </div>
+                    <div class="video-wrapper">
+                        <video class="hero-video video-el" muted loop playsinline>
+                            <source src="assets/video/heroVideo.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="hero-play play-button G-center">
+                            <i class="icon icon-play"></i>
+                        </div>
+
+                        <div class="hero-video-img video-img G-flex">
+                            <img src="assets/images/videoImg2.webp" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="advantages-section section section-animate">
+            <div class="container">
+                <div class="advantages-body">
+                    <h2 class="gradient-title">
+                        <span class="mobile-text-wrap">Представляем новейшую</span> модель <span class="desktop-text-wrap">для генерации <span class="mobile-text-wrap">видео — Veo 3</span></span>
+                    </h2>
+
+                    <div class="advantages-items G-flex">
+                        <div class="advantage-item G-column-center">
+                            <div class="advantage-item-icon G-flex">
+                                <img src="assets/images/advantageItemIcon.webp" alt="">
+                            </div>
+                            <h3>Реализм нового уровня</h3>
+                            <p>
+                                Поддержка 4K, передовая физика
+                                <span class="mobile-text-wrap">движений
+                                и звуки, приближенные</span>
+                                к реальному миру
+                            </p>
+                        </div>
+
+                        <div class="advantage-item G-column-center">
+                            <div class="advantage-item-icon G-flex">
+                                <img src="assets/images/advantageItemIcon2.webp" alt="">
+                            </div>
+                            <h3>100% понимание промпта</h3>
+                            <p>
+                                Улучшенное понимание
+                                <span class="mobile-text-wrap">и точность
+                                в выполнении</span>
+                                запросов
+                            </p>
+                        </div>
+
+                        <div class="advantage-item G-column-center">
+                            <div class="advantage-item-icon G-flex">
+                                <img src="assets/images/advantageItemIcon3.webp" alt="">
+                            </div>
+                            <h3>Креативный контроль</h3>
+                            <p>
+                                Доступ к более продвинутой <span class="mobile-text-wrap">настройке генерируемых видео</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section section-animate">
+            <div class="big-container">
+                <div class="about-body">
+                    <div class="section-titles">
+                        <h2>Генерируйте реальность <span class="mobile-text-wrap">по кадрам</span></h2>
+                        <p><span class="mobile-text-wrap">Нейросеть, обученная на</span> кинематографических данных, <span class="desktop-text-wrap">генерирует <span class="mobile-text-wrap">видео с физической достоверностью</span></span>
+                        </p>
+                    </div>
+
+                    <div class="about-video-cnt video-wrapper">
+                        <video class="about-video video-el" muted loop playsinline>
+                            <source src="assets/video/aboutVideo.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="about-play play-button G-center">
+                            <i class="icon icon-play"></i>
+                        </div>
+                        <div class="about-video-img video-img G-flex">
+                            <img src="assets/images/videoImg.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="about-info G-align-start">
+                        <p class="block-text">
+                            <span class="text-white">Prompt:</span> Cinematic, photorealistic tracking shot of a golden
+                            retriever wearing a child’s
+                            astronaut costume, slowly floating down a quiet suburban street on a helium balloon at
+                            sunset. The dog's ears flap in the breeze, and it gazes longingly at the moon rising in the
+                            background. The camera hovers just ahead of the dog, capturing the surreal calm as children
+                            on bicycles pause and stare in disbelief. The light is golden and dreamy, casting long
+                            shadows on the street
+                        </p>
+                        <button class="btn-orange">Начать сейчас</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="howWork" class="how-work-section section-animate ">
+            <div class="small-container">
+                <div class="how-work-body">
+                    <h2 class="gradient-title">
+                        Каждый кадр передаёт нюансы <span class="text-wrap">физики и атмосферы так точно,</span>
+                        что визуально видео неотличимы <span class="desktop-text-wrap">от настоящей <span class="mobile-text-wrap">съёмки</span></span>
+                    </h2>
+
+                    <div class="work-big-video video-wrapper">
+                        <div class="work-video-cnt ">
+                            <video class="work-video video-el" muted loop playsinline>
+                                <source src="assets/video/workVideo.mp4" type="video/mp4">
+                            </video>
+
+
+                            <div class="work-video-img video-img G-flex">
+                                <img src="assets/images/videoImg3.webp" alt="">
+                            </div>
+
+                        </div>
+                        <div class="work-video-tools G-flex">
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> A giant, iridescent soap bubble, reflecting a
+                                vibrant rainbow, floats gently
+                                through a sun-drenched meadow. A tiny, determined bee buzzes frantically, chasing the
+                                bubble as it weaves between tall wildflowers and swaying grasses. The bubble's surface
+                                shimmers with light, creating a magical, ethereal atmosphere. Medium shot, following the
+                                bubble and bee with a slow, graceful camera movement.
+                            </p>
+                            <div class="work-play play-button  G-center">
+                                <i class="icon icon-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="how-work-items">
+                        <div class="work-item G-flex-column">
+
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo1.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg4.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> A slow zoom-in reveals a man calmly walking a
+                                majestic tiger through the heart
+                                of Moscow. Slow-motion, overhead wide shot showcases the grandeur of the city
+                                contrasting with the powerful animal
+                            </p>
+
+                        </div>
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo2.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg5.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> A slow zoom-in reveals a man calmly walking a
+                                majestic tiger through the heart
+                                of Moscow. Slow-motion, overhead wide shot showcases the grandeur of the city
+                                contrasting with the powerful animal
+                            </p>
+                        </div>
+
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo3.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg6.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> A hyperrealistic human exhales onto their
+                                own palm, which begins to disintegrate into fine sand, grain by grain, under the breath.
+                                The camera focuses on each detail — dust, cracks, eyelashes fluttering.
+                            </p>
+                        </div>
+
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo4.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg7.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> Macro hyperreal close-up of a fly's compound
+                                eye, revealing a fully animated galaxy spinning within. Photorealistic detail showcases
+                                every hair, movement, and twitch
+                            </p>
+                        </div>
+
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo5.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg8.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span> Hyperrealistic slow-motion shot of a man,
+                                drenched and still, as water droplets rise from the wet ground. Steam visibly rises from
+                                his breath. His soaked clothes cling to his body
+                            </p>
+                        </div>
+
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo6.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg9.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span>
+                                A man in a dimly lit room coughs, each exhale releasing thick smoke that transforms
+                                mid-air into a flock of detailed birds. The birds briefly flutter their wings before
+                                dissolving into shimmering particles
+                            </p>
+                        </div>
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo7.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg10.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span>
+                                In the middle of an empty concrete room, a hyperrealistic trapdoor opens upward,
+                                revealing clouds and birds inside. As the camera moves closer, wind blows out from
+                                inside. Light and shadow perfectly real
+                            </p>
+                        </div>
+
+
+                        <div class="work-item G-flex-column">
+                            <div class="work-video-wrapper video-wrapper">
+                                <video class="work-item-video video-el" muted loop playsinline>
+                                    <source src="assets/video/workItemVideo8.mp4" type="video/mp4">
+                                </video>
+                                <div class="work-video-img video-img G-flex">
+                                    <img src="assets/images/videoImg11.webp" alt="">
+                                </div>
+                                <div class="work-item-play play-button G-center">
+                                    <i class="icon icon-play"></i>
+                                </div>
+                            </div>
+                            <p class="block-text">
+                                <span class="text-white">Prompt:</span>
+                                A vampire with long, sharp claws extends a hand, showcasing the detail of her
+                                fingernails. Dramatic lighting accentuates her pale skin
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="how-work-btn G-center">
+                        <button class="btn-orange">Начать сейчас</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="functional" class="functional-section section-animate">
+            <div class="small-container">
+                <div class="functional-body">
+                    <div class="section-titles">
+                        <h2>Границы между <span class="mobile-text-wrap">реальностью</span>
+                            <span class="text-wrap">и генерацией исчезли</span></h2>
+                        <p>
+                            От волшебных миров до гиперреалистичных <span class="desktop-text-wrap">драм — <span class="mobile-text-wrap">Veo 3 способна воплотить</span> любую</span>
+                            концепцию
+                        </p>
+                    </div>
+
+                    <div class="functional-video-cnt video-wrapper">
+                        <video class="functional-video video-el" muted loop playsinline>
+                            <source src="assets/video/functionalVideo.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="functional-play play-button G-center">
+                            <i class="icon icon-play"></i>
+                        </div>
+                        <div class="functional-video-img video-img G-flex">
+                            <img class="img-desktop" src="assets/images/videoImg12.webp" alt="">
+                            <img class="img-mobile" src="assets/images/videoImg12Mobile.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="functional-text">
+                        <p class="block-text"><span class="text-white">Prompt:</span> A lone astronaut, in a spacesuit,
+                            gracefully performs a Japanese tea ceremony on the lunar surface. Floating teacups and
+                            utensils drift gently in zero gravity. The Earth rises majestically in the distance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="trust-section section-animate ">
+            <div class="big-container">
+                <div class="trust-video-cnt video-wrapper G-column-center">
+                    <video class="trust-video" autoplay muted loop playsinline>
+                        <source src="assets/video/trustVideo.mp4" type="video/mp4">
+                    </video>
+
+
+
+                    <div class="trust-titles  G-column-center">
+                        <h2><span class="mobile-text-wrap">Выглядит как</span> реальность <span class="desktop-text-wrap">— <span class="mobile-text-wrap">работает как ИИ</span></span></h2>
+                        <p>Всё, что вы можете придумать, <span class="mobile-text-wrap">теперь можно увидеть.</span>
+                            <span class="desktop-text-wrap">Попробуйте сгенерировать <span class="mobile-text-wrap">своё первое видео прямо  </span>сейчас</span></p>
+                        <button class="btn-orange">Начать сейчас</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-animate ">
+        <div class="footer-container">
+            <div class="footer-body G-align-center">
+                <a href="index.html" class="footer-logo G-flex">
+                    <img class="img-desktop" src="assets/images/logo.svg" alt="logo">
+                    <img class="img-mobile" src="assets/images/logoMobile.svg" alt="logo">
+
+                </a>
+
+                <nav class="footer-menu">
+
+                    <ul class='footer-menu-list G-align-center'>
+                        <li>
+                            <a  href="#advantages">Преимущества</a>
+                        </li>
+                        <li >
+                            <a  href="#howWork">Как работает</a>
+                        </li>
+                        <li>
+                            <a href="#functional">Функционал</a>
+                        </li>
+
+                        <li>
+                            <a  href="#">Отзывы</a>
+                        </li>
+                        <li >
+                            <a  href="#">FAQ</a>
+                        </li>
+
+
+                    </ul>
+
+
+                </nav>
+
+                <div class="footer-actions G-align-center">
+                    <button class="btn-login">Вход</button>
+                    <button class="btn-login ">
+                        <span>Регистрация </span>
+                    </button>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer-decor G-flex">
+            <img class="img-desktop" src="assets/images/footerDecor.png" alt="">
+            <img class="img-mobile" src="assets/images/footerDecorMobile.webp" alt="">
+        </div>
+        <div class="footer-blur G-flex">
+            <img src="assets/images/footerBlur.png" alt="">
+        </div>
+
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
