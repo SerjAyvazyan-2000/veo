@@ -1,10 +1,11 @@
 .footer {
     margin-top: 101px;
     background: #060606;
-    border-bottom: 1px solid;
+    border-top: 1px solid var(--gray);
     min-height: 414px;
     position: relative;
     z-index: 2;
+
 }
 .footer .footer-body{
     opacity: 0;
